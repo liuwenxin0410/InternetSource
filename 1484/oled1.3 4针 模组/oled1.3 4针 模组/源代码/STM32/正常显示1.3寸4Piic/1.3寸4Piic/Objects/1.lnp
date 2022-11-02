@@ -1,0 +1,8 @@
+--cpu Cortex-M3
+".\objects\system_stm32f10x.o"
+".\objects\startup_stm32f10x_md.o"
+".\objects\1.3oled4piic.o"
+--strict --scatter ".\Objects\1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\1.map" -o .\Objects\1.3OLED4Piic
